@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Service - Udon Thani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', 'Noto Sans Thai', 'Noto Sans SC', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-4xl mx-auto glass-card rounded-2xl overflow-hidden">
+        
+        <!-- Header Image & Title -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 p-8 text-center text-white">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Thai Wife Visa Service</h1>
+            <p class="text-blue-100 text-lg">Provincial Immigration (Non-O Visa Extension)</p>
+        </div>
+
+        <!-- Language Tabs -->
+        <div class="flex border-b border-gray-200 bg-gray-50">
+            <button onclick="switchTab('thai')" id="tab-thai" class="flex-1 py-4 text-center font-medium text-blue-600 border-b-2 border-blue-600 transition-colors focus:outline-none">
+                🇹🇭 ภาษาไทย
+            </button>
+            <button onclick="switchTab('english')" id="tab-english" class="flex-1 py-4 text-center font-medium text-gray-500 hover:text-blue-600 hover:border-b-2 hover:border-blue-300 transition-colors focus:outline-none">
+                🇬🇧 English
+            </button>
+            <button onclick="switchTab('chinese')" id="tab-chinese" class="flex-1 py-4 text-center font-medium text-gray-500 hover:text-blue-600 hover:border-b-2 hover:border-blue-300 transition-colors focus:outline-none">
+                🇨🇳 中文
+            </button>
+        </div>
+
+        <div class="p-6 md:p-8">
+
+            <!-- THAI CONTENT -->
+            <div id="content-thai" class="tab-content active space-y-8">
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-md">
+                    <p class="text-yellow-800 font-semibold">⚠️ ข้อมูลสำคัญ:</p>
+                    <p class="text-yellow-700">การไปทำวีซ่าที่ ตม. ต่างจังหวัด ต้องเดินทางไป 2 ครั้ง และ <span class="font-bold underline">ต้องเดินทางไปพร้อมภรรยาไทยเท่านั้น</span></p>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+                        ขั้นตอนการตรวจสอบเอกสารเบื้องต้น
+                    </h2>
+                    <p class="text-gray-600 ml-11">กรุณาส่งเอกสารดังต่อไปนี้มาให้ทางเราตรวจสอบก่อนดำเนินการ</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 ml-11">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-blue-700 mb-2">📌 เอกสารของชาวต่างชาติ (ผู้ขออยู่ต่อ)</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>หนังสือเดินทาง (Passport): ตัวจริง ถ่ายทุกหน้า</li>
+                                <li>ทะเบียนสมรส (คร.2 หรือ คร.22)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-pink-700 mb-2">📌 เอกสารของภรรยาไทย</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>บัตรประจำตัวประชาชน</li>
+                                <li>ทะเบียนบ้าน</li>
+                                <li>ภาพถ่ายบ้านปัจจุบัน (ในบ้าน 2 รูป, นอกบ้าน 2 รูป)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <!-- Step 2 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+                        การเดินทางไปครั้งที่ 1
+                    </h2>
+                    <p class="text-gray-600 ml-11">เอกสารที่ต้องจัดเตรียมเมื่อเดินทางไป ตม. ต่างจังหวัด ครั้งแรก</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 ml-11">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-blue-700 mb-2">📌 เอกสารของชาวต่างชาติ</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>หนังสือเดินทาง (Passport): ตัวจริง พร้อมสำเนาทุกหน้า</li>
+                                <li>ทะเบียนสมรส (คร.2/คร.22): ตัวจริง พร้อมสำเนา</li>
+                                <li>รูปถ่าย: ขนาด 4×6 ซม. พื้นหลังขาวหรือฟ้า (1-2 รูป)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-pink-700 mb-2">📌 เอกสารของภรรยาไทย</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>บัตรประจำตัวประชาชน: ตัวจริง พร้อมสำเนา</li>
+                                <li>ทะเบียนบ้าน: ตัวจริง พร้อมสำเนา</li>
+                                <li>ภาพถ่ายบ้านที่พักอาศัยจริง (ในบ้าน 2 รูป, นอกบ้าน 2 รูป)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ml-11 mt-4 space-y-3">
+                        <div class="bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded-md">
+                            <p class="text-indigo-800 font-medium">⏳ หลังจากนั้น 20 วัน ให้ส่งพาสปอร์ตกลับไปเพื่อตีตรา 90 วัน</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded-md">
+                            <h4 class="font-semibold text-blue-800 mb-1">การเปิดบัญชีธนาคาร (สำหรับขออยู่ต่อ 12 เดือน)</h4>
+                            <p class="text-sm text-gray-700">เมื่อได้รับพาสปอร์ตคืน แจ้งวันเปิดบัญชีและทำใบรับรองธนาคาร ก่อนวีซ่าหมดอายุ 35-45 วัน (มีเจ้าหน้าที่พาไป)</p>
+                            <p class="text-xs text-red-600 mt-2">* หากไม่สามารถเปิดบัญชีได้ (ติด Watch list แบงก์ชาติ) จะไม่สามารถขออยู่ต่อ 12 เดือนได้ ทางเราจะคืนเงิน 50%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <!-- Step 3 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+                        การเดินทางไปครั้งที่ 2 (ตม. ต่างจังหวัด)
+                    </h2>
+                    <div class="ml-11">
+                        <p class="text-gray-700 mb-2">แจ้งวันเดินทางไปต่อวีซ่า 12 เดือน หลังจากได้รับเอกสารธนาคารแล้ว</p>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-gray-800 mb-2">📌 เอกสารที่ต้องนำไป:</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>หนังสือเดินทาง (Passport) เล่มจริง</li>
+                                <li>สมุดบัญชีธนาคาร: ตัวจริง และสำเนา</li>
+                                <li>หนังสือรับรองธนาคาร: ตัวจริง และสำเนา</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing -->
+                <div class="mt-8 bg-green-50 p-6 rounded-xl border border-green-200 shadow-sm ml-11">
+                    <h3 class="text-xl font-bold text-green-800 mb-2">รายละเอียดบริการและค่าใช้จ่าย</h3>
+                    <p class="text-green-700 mb-2 font-medium">วีซ่าติดตามภรรยาไทย บริการครบวงจร (ได้วีซ่า 3 เดือน + 12 เดือน)</p>
+                    <ul class="list-disc list-inside text-green-800 text-sm space-y-1 mb-4">
+                        <li>รวมบริการพาไปเปิดบัญชีธนาคาร</li>
+                        <li>รวมบริการเช่าเงิน 400,000 บาท โชว์ในบัญชี</li>
+                        <li>ดูแลจนจบขั้นตอนการทำวีซ่า</li>
+                    </ul>
+                    <p class="text-red-600 text-sm font-semibold mt-4">*** หมายเหตุ: ค่าบริการนี้ <span class="underline">ไม่รวม</span> ค่าเดินทาง (เช่น ค่าตั๋วเครื่องบินไป-กลับ) ทั้ง 2 ครั้ง</p>
+                </div>
+            </div>
+
+            <!-- ENGLISH CONTENT -->
+            <div id="content-english" class="tab-content space-y-8">
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-md">
+                    <p class="text-yellow-800 font-semibold">⚠️ Important Notice:</p>
+                    <p class="text-yellow-700">The visa process requires 2 trips to the Provincial Immigration Office. <span class="font-bold underline">You must travel with your Thai wife on both occasions.</span></p>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+                        Initial Document Verification
+                    </h2>
+                    <p class="text-gray-600 ml-11">Please send the following documents for our review before proceeding:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 ml-11">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-blue-700 mb-2">📌 Foreigner's Documents</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>Passport: Original (Copy of all pages)</li>
+                                <li>Marriage Certificate (Kor Ror 2 or Kor Ror 22)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-pink-700 mb-2">📌 Thai Wife's Documents</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>Thai ID Card</li>
+                                <li>House Registration (Tabian Baan)</li>
+                                <li>Photos of current residence (2 inside, 2 outside)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <!-- Step 2 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+                        First Trip
+                    </h2>
+                    <p class="text-gray-600 ml-11">Documents to prepare for the first visit to the Provincial Immigration Office:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 ml-11">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-blue-700 mb-2">📌 Foreigner's Documents</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>Passport: Original & Copies of all pages</li>
+                                <li>Marriage Certificate (KR.2/KR.22): Original & Copy</li>
+                                <li>Photos: 4x6 cm, white/blue background (1-2 pcs)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-pink-700 mb-2">📌 Thai Wife's Documents</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>Thai ID Card: Original & Copy</li>
+                                <li>House Registration: Original & Copy</li>
+                                <li>Photos of residence (2 inside, 2 outside)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ml-11 mt-4 space-y-3">
+                        <div class="bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded-md">
+                            <p class="text-indigo-800 font-medium">⏳ 20 days later, send the passport back to receive the 90-day stamp.</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded-md">
+                            <h4 class="font-semibold text-blue-800 mb-1">Bank Account Opening (For 12-Month Extension)</h4>
+                            <p class="text-sm text-gray-700">Once the passport is returned, schedule a date to open a bank account and get a bank guarantee letter. This must be done 35-45 days before the visa expires. (Our staff will escort you).</p>
+                            <p class="text-xs text-red-600 mt-2">* If you cannot open an account due to the Bank of Thailand watchlist, the 12-month extension cannot proceed (50% refund will be provided).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <!-- Step 3 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+                        Second Trip (Provincial Immigration)
+                    </h2>
+                    <div class="ml-11">
+                        <p class="text-gray-700 mb-2">Inform us of the travel date for the 12-month extension after obtaining the bank documents.</p>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-gray-800 mb-2">📌 Required Documents:</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>Original Passport</li>
+                                <li>Bank Passbook: Original & Copy</li>
+                                <li>Bank Guarantee Letter: Original & Copy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing -->
+                <div class="mt-8 bg-green-50 p-6 rounded-xl border border-green-200 shadow-sm ml-11">
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Service Package Details</h3>
+                    <p class="text-green-700 mb-2 font-medium">Thai Wife Visa Full Service (Includes 3-month + 12-month visa)</p>
+                    <ul class="list-disc list-inside text-green-800 text-sm space-y-1 mb-4">
+                        <li>Includes escort service for bank account opening</li>
+                        <li>Includes the provision of 400,000 THB required fund showing in the account</li>
+                        <li>Complete end-to-end service until the visa is granted</li>
+                    </ul>
+                    <p class="text-red-600 text-sm font-semibold mt-4">*** Note: This service fee <span class="underline">DOES NOT</span> include travel expenses (e.g., round-trip flights) for both trips.</p>
+                </div>
+            </div>
+
+            <!-- CHINESE CONTENT -->
+            <div id="content-chinese" class="tab-content space-y-8">
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-md">
+                    <p class="text-yellow-800 font-semibold">⚠️ 重要提示：</p>
+                    <p class="text-yellow-700">前往外府移民局办理签证需要去2次，并且 <span class="font-bold underline">必须由泰国妻子全程陪同前往。</span></p>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+                        初步文件审核
+                    </h2>
+                    <p class="text-gray-600 ml-11">在开始办理前，请将以下文件发送给我们进行审核：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 ml-11">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-blue-700 mb-2">📌 外籍人士文件（申请人）</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>护照：原件（所有页面的照片或扫描件）</li>
+                                <li>结婚证书（Kor Ror 2 或 Kor Ror 22）</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-pink-700 mb-2">📌 泰国妻子文件</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>泰国身份证</li>
+                                <li>户口本（Tabian Baan）</li>
+                                <li>当前真实住所的照片（室内2张，室外2张）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <!-- Step 2 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+                        第一次前往
+                    </h2>
+                    <p class="text-gray-600 ml-11">第一次前往外府移民局时需准备的文件：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 ml-11">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-blue-700 mb-2">📌 外籍人士文件</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>护照：原件及所有页面的复印件</li>
+                                <li>结婚证书（KR.2/KR.22）：原件及复印件</li>
+                                <li>照片：4x6厘米，白底或蓝底（1-2张）</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-pink-700 mb-2">📌 泰国妻子文件</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>泰国身份证：原件及复印件</li>
+                                <li>户口本：原件及复印件</li>
+                                <li>住所照片（室内2张，室外2张）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ml-11 mt-4 space-y-3">
+                        <div class="bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded-md">
+                            <p class="text-indigo-800 font-medium">⏳ 此后 20 天，需将护照寄回以获取 90 天的签证章。</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded-md">
+                            <h4 class="font-semibold text-blue-800 mb-1">开设银行账户（用于12个月签证延期）</h4>
+                            <p class="text-sm text-gray-700">收到护照后，请在签证到期前 35-45 天告知开户和办理银行存款证明的日期。（届时将有工作人员陪同）。</p>
+                            <p class="text-xs text-red-600 mt-2">* 如果由于泰国央行黑名单原因无法开设账户，将无法申请12个月的延期（将退还50%的费用）。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <!-- Step 3 -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                        <span class="bg-blue-100 text-blue-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+                        第二次前往（外府移民局）
+                    </h2>
+                    <div class="ml-11">
+                        <p class="text-gray-700 mb-2">取得银行文件后，请告知前往办理12个月签证延期的旅行日期。</p>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-semibold text-gray-800 mb-2">📌 所需文件：</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>护照原件</li>
+                                <li>银行存折：原件及复印件</li>
+                                <li>银行存款证明：原件及复印件</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing -->
+                <div class="mt-8 bg-green-50 p-6 rounded-xl border border-green-200 shadow-sm ml-11">
+                    <h3 class="text-xl font-bold text-green-800 mb-2">服务详情及费用</h3>
+                    <p class="text-green-700 mb-2 font-medium">依亲签证（泰国妻子）全套服务（包含3个月 + 12个月签证）</p>
+                    <ul class="list-disc list-inside text-green-800 text-sm space-y-1 mb-4">
+                        <li>包含陪同开立银行账户服务</li>
+                        <li>包含提供银行账户中所需的 400,000 泰铢资金展示服务</li>
+                        <li>办理过程全程跟进直至获得签证</li>
+                    </ul>
+                    <p class="text-red-600 text-sm font-semibold mt-4">*** 注意：此服务费 <span class="underline">不包含</span> 两次往返的交通费用（如往返机票）。</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function switchTab(language) {
+            // Hide all content
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Reset tab styling
+            document.querySelectorAll('button[id^="tab-"]').forEach(el => {
+                el.classList.remove('text-blue-600', 'border-blue-600');
+                el.classList.add('text-gray-500', 'hover:text-blue-600', 'hover:border-blue-300');
+                el.classList.replace('border-b-2', 'border-b-0'); // removing bottom border strictly if needed, but styling class management is better
+                // Actually, let's just reset classes properly based on tailwind
+                el.className = 'flex-1 py-4 text-center font-medium text-gray-500 hover:text-blue-600 hover:border-b-2 hover:border-blue-300 transition-colors focus:outline-none';
+            });
+
+            // Show selected content
+            document.getElementById(`content-${language}`).classList.add('active');
+
+            // Style active tab
+            const activeTab = document.getElementById(`tab-${language}`);
+            activeTab.className = 'flex-1 py-4 text-center font-medium text-blue-600 border-b-2 border-blue-600 transition-colors focus:outline-none';
+        }
+    </script>
+</body>
+</html>
